@@ -1,7 +1,9 @@
 export default function Footer() {
+    let dt = new Date();
+
     return (
         <footer>
-           <p>Copyright ⓒ 2022</p>
+           <p>Copyright ⓒ {dt.getFullYear()}</p>
         </footer>
     )
   }
