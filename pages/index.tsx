@@ -1,7 +1,7 @@
-import Head from 'next/head'
-import Header from '../components/header'
-import Footer from '../components/footer'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -15,11 +15,13 @@ export default function Home() {
       <Header />
 
       <main className={styles.main}>
-
+        <div className={styles.note}>
+          <h1>This is the note title</h1>
+          <p>This is the note content</p>
+        </div>
       </main>
 
       <Footer></Footer>
-      
     </>
-  )
+  );
 }
